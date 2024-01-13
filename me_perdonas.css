@@ -58,5 +58,9 @@ body {
 p {
     font-size: xx-large;
     justify-content: center;
-    color: pink;
+    color: black;
+}
+
+vv {
+    justify-content: center;
 }
