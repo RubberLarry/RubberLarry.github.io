@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "frutiger", Arial, sans-serif;
+}
+
+body {
+    background-image: url(media/mobile-graphic-menu-1.png);
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    margin: 10px auto 0 auto;
+    width: 40%;
+}
+
+textarea {
+    width: 100%;
+}
+
+form {
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 12px;
+    margin: 15px auto;
+}
+
+.g-recaptcha {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}

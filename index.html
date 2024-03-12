@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La mari</title>
-    
-    <link rel="stylesheet" href="me_perdonas.css">
-    
-    
-    <style>
-        #No {
-    grid-row: 5;
-    grid-column: 6;
-}
-    </style>
+    <title>Logista</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
-<body>  
-        <div>
-            <p id="p" hidden>bueno, vamos viendo</p>
-            <img id="vv" hidden src="https://st2.depositphotos.com/16030310/43108/v/450/depositphotos_431083210-stock-illustration-initial-letter-vv-logo-lowercase.jpg"></img>
-        <h1 id="1">Viene la Mari a Madrid??</h1>
-        <section>
-        <button id="Si">No</button>
-        <button id="No">Si</button>
-    </section>
-    </div>
-   
-    <script src="me_perdonas.js"></script>
+
+<body>
+    <h1>Where shall we take you?</h1>
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Da5000001yaJN" onsubmit="beforeSubmit(event)" method="POST">
+
+        <input type=hidden name='captcha_settings' value='{"keyname":"Github","fallback":"true","orgId":"00Da5000001yaJN","ts":""}'>
+        <input type=hidden name="oid" value="00Da5000001yaJN">
+        <input type=hidden name="retURL" value="https://rubberlarry.github.io/thankyou.html">
+
+        <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+        <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+        
+        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+        
+        <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+        
+        <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+        
+        <label for="description">Description</label><textarea name="description"></textarea><br>
+        
+        <div class="g-recaptcha" data-callback="captchaSquccess" data-sitekey="6Lc4EZYpAAAAAGlDQ5-7dIRufkuP_lwgjYPctArK"></div><br>
+        <input type="submit" name="submit">
+        
+        </form>
+
 </body>
+
 </html>
